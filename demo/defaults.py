@@ -73,5 +73,5 @@ class DefaultPredictor:
             task = f"The task is {task}"
 
             inputs = {"image": image, "height": height, "width": width, "task": task}
-            predictions = self.model([inputs])[0]
+            predictions = self.model([inputs])
             return predictions
